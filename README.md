@@ -6,3 +6,4 @@
 # Current challenges:
  1. Longest word in a sentance - freeCodeCamp - finds the longest word in a sentance
  2. Largest in Array - freeCodeCamp - finds the largest value array in a series of subarrays
+ 3. Palindrome Checker - freeCodeCamp - checks to see if a string is a palindrome

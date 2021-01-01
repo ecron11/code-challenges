@@ -1,0 +1,23 @@
+function palindrome(str) {
+  //Removes all special characters and spaces by using a simple Regex and replace with empty string. The \W includes underscores so an OR operator had to be added to account for them.
+  let specCharsRegex = /\W|_/g;
+  str = str.replace(specCharsRegex, '')
+  
+  //Converts string into all uppercase to normalize.
+  str = str.toUpperCase();
+
+  //Creates a new string variable and iterates through string backwards adding each letter to new reversed string
+  let revStr = "";
+  for (let i = str.length -1; i >= 0; i--){
+    revStr += str[i];
+  }
+
+  //test if reversed string and original string are the same. If they are, then it is a palindrome and therefor return true. Else return false.
+  if (revStr == str) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
